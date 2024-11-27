@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("../assets/fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+body {
+  font-family: "inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #402101;
+  color: white;
+  height: 96px;
+  width: 100%;
+}
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+header .header-container ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+}
+
+header .header-container a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+header .header-container a:hover {
+  color: #d5906e;
+}
+
+header .header-container span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+header .header-container .art-text {
+  color: #d5906e;
+}
+
+header .header-container .header-cart-container {
+  display: flex;
+  align-items: center;
+}
+
+header .header-container .header-cart-container span {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 96px;
+  left: -240px;
+  width: 240px;
+  height: 260px;
+  background-color: #b53b1b;
+  transition: left 0.3s ease-in-out;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 1180px) {
+  header .header-container {
+    padding: 0 60px;
+  }
+  .header-title {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 744px) {
+  header .header-container {
+    padding: 0 20px;
+    position: relative;
+  }
+
+  header .header-container ul {
+    display: none;
+  }
+
+  header .header-container .burger-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  header .header-container .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s;
+  }
+
+  /* Sidebar */
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .sidebar ul li a:hover {
+    color: #d5906e;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  header .header-container {
+    padding: 0 10px;
+  }
+
+  header .header-container span {
+    font-size: 28px;
+  }
+
+  header .header-container .header-cart-container a {
+    font-size: 14px;
+  }
+}
+
+/* Home Container */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  background-image: url("../assets/images/home-bg.png");
+  min-height: 560px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.home-container div {
+  font-size: 40px;
+  text-shadow: 4px 4px 2px #581504;
+  font-weight: 700;
+}
+
+.home-container button {
+  padding: 12px 45px;
+  background-color: white;
+  border: 2px solid #b53b1b;
+  color: #b53b1b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #402101;
+  a {
+    color: #402101;
+  }
+}
+
+.home-container a {
+  text-decoration: none;
+}
+
+.home-container button:hover {
+  background-color: #b53b1b;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+/* Products Container */
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  padding: 48px 0;
+  background-color: #ea904f;
+  overflow: hidden;
+}
+
+.products-container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.products-container .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  gap: 24px;
+}
+
+.products-container .product {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  width: 282px;
+  height: 330px;
+}
+
+.products-container .product img {
+  width: 100%;
+  height: 185px;
+  border-radius-top: 10px;
+}
+
+.products-container .product h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #b53b1b;
+}
+
+.products-container .product .price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b53b1b;
+  margin-top: 21px;
+}
+
+.products-container .product button {
+  padding: 6px 19px;
+  background-color: white;
+  border: 2px solid #b53b1b;
+  color: #b53b1b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.products-container .product button:hover {
+  background-color: #b53b1b;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #402101;
+  color: white;
+  width: 100%;
+  padding: 80px;
+  flex: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 120px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin: 5px 0;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-container ul li a:hover {
+  color: #d5906e;
+}
+
+.socials {
+  margin-top: 15px;
+}
+
+.socials a {
+  margin-right: 10px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.footer-title span {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.footer-title .art-text {
+  color: #d5906e;
+}
+
+.footer-container div img {
+  width: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer-container div > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1110px) {
+  footer .footer-container {
+    text-align: center;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+}
