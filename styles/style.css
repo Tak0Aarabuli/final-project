@@ -42,6 +42,11 @@ header .header-container {
   padding: 0 120px;
 }
 
+header .header-container nav {
+  display: flex;
+  align-items: center;
+}
+
 header .header-container ul {
   display: flex;
   align-items: center;
@@ -300,39 +305,30 @@ header .header-container .header-cart-container span {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #402101;
   color: white;
   width: 100%;
-  padding: 80px 0px;
-  flex: 1;
+  padding: 80px 120px;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 120px;
-}
-
-.footer-container ul {
+.footer-navigation ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-container ul li {
+.footer-navigation ul li {
   margin: 5px 0;
 }
 
-.footer-container ul li a {
+.footer-navigation ul li a {
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.footer-container ul li a:hover {
+.footer-navigation ul li a:hover {
   color: #d5906e;
 }
 
@@ -348,6 +344,7 @@ footer {
   width: 24px;
   height: 24px;
   transition: transform 0.3s;
+  object-fit: contain;
 }
 
 .socials img:hover {
@@ -359,6 +356,16 @@ footer {
   font-weight: 700;
 }
 
+.footer-title a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-title a:hover {
+  color: #d5906e;
+}
+
 .footer-title .art-text {
   color: #d5906e;
 }
@@ -367,6 +374,7 @@ footer {
   width: 20px;
   margin-right: 10px;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 .footer-container div > div {
@@ -389,4 +397,42 @@ footer {
     justify-content: center;
     padding: 0px;
   }
+}
+
+/* new Footer */
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #d5906e; /* Example hover color */
+}
+
+.footer-contact .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-contact a:hover .icon {
+  transform: scale(1.1); /* Hover effect for icons */
 }
