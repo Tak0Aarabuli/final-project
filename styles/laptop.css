@@ -1,0 +1,40 @@
+@media (max-width: 1181px) {
+  /* index.html */
+  header {
+    padding: 32px;
+  }
+
+  .header-title a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-title a span {
+    font-size: 24px;
+  }
+
+  .header-title a span:nth-child(2) {
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .products-wrapper {
+    overflow-x: auto;
+  }
+
+  .products {
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 282px;
+    scroll-snap-align: start;
+    scroll-snap-type: x mandatory;
+  }
+  .product {
+    flex: 0 0 auto;
+  }
+  /* end index.html */
+
+  .sidebar {
+    display: block;
+  }
+}
