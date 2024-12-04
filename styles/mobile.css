@@ -16,6 +16,9 @@
   .shop-section {
     padding-top: 48px;
   }
+  .hide-phone {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -37,4 +40,10 @@
     width: 272px;
     display: flex;
   } */
+  .products-grid {
+    padding: 0 8px;
+  }
+  .shop-header {
+    padding: 0px 8px;
+  }
 }

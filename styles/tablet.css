@@ -101,6 +101,9 @@
   .right-container {
     width: 100%;
   }
+  .hide-tablet {
+    display: none;
+  }
 }
 
 @media (max-width: 876px) {
@@ -109,6 +112,10 @@
   }
   .products-grid {
     grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+  .shop-header {
+    padding: 0px 24px;
   }
   .shop-header {
     padding: 0px 24px;
