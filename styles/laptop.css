@@ -42,3 +42,23 @@
     padding: 80px 32px;
   }
 }
+
+@media (max-width: 1260px) {
+  .products-grid .product-card:nth-child(n + 7) {
+    display: none;
+  }
+  .products-grid .product-card {
+    width: 100%;
+    justify-content: center;
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop-header {
+    padding: 0px 32px;
+  }
+  .product-card img {
+    display: flex;
+    width: 100%;
+  }
+}

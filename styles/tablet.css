@@ -83,4 +83,29 @@
   .footer-contact ul li a img {
     margin-right: 0px;
   }
+  .shop-header h2 {
+    font-size: 16px;
+  }
+  .sort-container {
+    padding: 5px 16px;
+  }
+  .shop-section {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 876px) {
+  .products-grid .product-card:nth-child(n + 5) {
+    display: none;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .shop-header {
+    padding: 0px 24px;
+  }
+
+  .sort-container button {
+    display: none;
+  }
 }
