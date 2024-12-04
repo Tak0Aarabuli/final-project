@@ -548,3 +548,124 @@ footer {
 .hide-tablet {
   display: inline;
 }
+
+/* contact */
+
+.contact-section {
+  padding: 200px 40px;
+  background-image: url("../assets/images/contact-bg.png");
+  font-family: Arial, sans-serif;
+}
+.left-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 64px;
+  flex: 1;
+}
+
+.contact-container {
+  max-width: 1038px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 40px;
+  background: #402101e5;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-info h1 {
+  font-size: 40px;
+  margin-bottom: 64px;
+  color: white;
+  font-weight: normal;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 88px;
+}
+
+.contact-icons .icon {
+  background-color: #b53b1b;
+  border: 2px solid white;
+  padding: 16px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.contact-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 60px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #ff6c51;
+  border: none;
+  color: white;
+  padding: 19px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff4f2e;
+}
+
+.contact-map iframe {
+  max-width: 494px;
+  height: 264px;
+  border-radius: 8px;
+  overflow: hidden;
+}

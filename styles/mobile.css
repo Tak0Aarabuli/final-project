@@ -19,6 +19,13 @@
   .hide-phone {
     display: none;
   }
+  .contact-icons {
+    flex-wrap: wrap;
+  }
+
+  .contact-icons .icon {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 320px) {

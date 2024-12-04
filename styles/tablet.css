@@ -95,14 +95,27 @@
   .contact-info h1 {
     margin-bottom: 24px;
   }
-  .contact-container {
-    gap: 48px;
-  }
+
   .right-container {
     width: 100%;
   }
   .hide-tablet {
     display: none;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .contact-form,
+  .contact-map {
+    flex: 1 1 100%;
+  }
+
+  .contact-container {
+    gap: 48px;
   }
 }
 
