@@ -119,6 +119,9 @@
   }
   .contact-icons {
   }
+  .shop-header {
+    margin: 0 auto 54px;
+  }
 }
 
 @media (max-width: 876px) {

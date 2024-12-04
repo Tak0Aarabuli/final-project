@@ -35,6 +35,10 @@
     flex-direction: column;
     gap: 36px;
   }
+  .shop-header {
+    padding: 0px 8px;
+    margin: 0 auto 40px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -58,8 +62,5 @@
   } */
   .products-grid {
     padding: 0 8px;
-  }
-  .shop-header {
-    padding: 0px 8px;
   }
 }
