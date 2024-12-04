@@ -20,11 +20,20 @@
     display: none;
   }
   .contact-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0px;
     flex-wrap: wrap;
   }
 
   .contact-icons .icon {
     margin-bottom: 10px;
+  }
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
   }
 }
 

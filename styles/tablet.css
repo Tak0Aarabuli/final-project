@@ -117,6 +117,8 @@
   .contact-container {
     gap: 48px;
   }
+  .contact-icons {
+  }
 }
 
 @media (max-width: 876px) {
