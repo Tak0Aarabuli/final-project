@@ -668,3 +668,46 @@ footer {
   border-radius: 8px;
   overflow: hidden;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.home-container {
+  animation-delay: 0.2s;
+}
+.products-container {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.home-container a {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
