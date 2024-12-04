@@ -92,6 +92,15 @@
   .shop-section {
     padding-top: 64px;
   }
+  .contact-info h1 {
+    margin-bottom: 24px;
+  }
+  .contact-container {
+    gap: 48px;
+  }
+  .right-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 876px) {
