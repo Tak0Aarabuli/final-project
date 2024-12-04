@@ -35,7 +35,7 @@ header {
   transform: translateX(-50%);
 }
 
-header .header-container {
+.header-container {
   display: flex;
   justify-content: space-between;
   max-width: 1440px;
@@ -104,66 +104,13 @@ header .header-container .header-cart-container span {
   display: none;
 }
 
+.sign-in-logo {
+  display: none;
+}
+
 /* Responsive design */
-@media (max-width: 1180px) {
-  header .header-container {
-    padding: 0 60px;
-  }
-}
 
-@media (max-width: 744px) {
-  header .header-container {
-    padding: 0 20px;
-    position: relative;
-  }
-
-  header .header-container ul {
-    display: none;
-  }
-
-  header .header-container .burger-menu {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  header .header-container .burger-menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: transform 0.3s;
-  }
-
-  /* Sidebar */
-
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .sidebar ul li {
-    margin: 10px 0;
-  }
-
-  .sidebar ul li a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-  }
-
-  .sidebar ul li a:hover {
-    color: #d5906e;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-}
-
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   header .header-container {
     padding: 0 10px;
   }
@@ -175,7 +122,7 @@ header .header-container .header-cart-container span {
   header .header-container .header-cart-container a {
     font-size: 14px;
   }
-}
+} */
 
 /* index.html Home Container */
 
@@ -317,7 +264,6 @@ button:hover {
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #402101;
   color: white;
   width: 100%;
@@ -399,17 +345,6 @@ footer {
   color: white;
 }
 
-@media (max-width: 1110px) {
-  footer .footer-container {
-    text-align: center;
-    gap: 32px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-  }
-}
-
 /* new Footer */
 .footer-contact ul {
   display: flex;
@@ -446,4 +381,21 @@ footer {
 
 .footer-contact a:hover .icon {
   transform: scale(1.1); /* Hover effect for icons */
+}
+
+.footer-navigation nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+  gap: 8px;
+}
+
+.footer-navigation nav ul {
+  margin-bottom: 42px;
+}
+
+.footer-contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
