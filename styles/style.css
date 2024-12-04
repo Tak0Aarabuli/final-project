@@ -531,7 +531,7 @@ footer {
 }
 
 .pagination a.active {
-  background-color: transparent;
+  background-color: #b53b1b;
   color: white;
   border: 1px solid white;
 }
