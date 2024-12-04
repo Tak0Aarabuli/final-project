@@ -13,23 +13,23 @@
 .right-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   gap: 64px;
   flex: 1;
 }
 
 .contact-container {
+  max-width: 1038px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
-  background: #402101;
-  opacity: 0.9;
+  background: #402101e5;
   border: 1px solid white;
   border-radius: 8px;
+  padding: 32px;
 }
 
 .contact-info {
@@ -37,46 +37,46 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 32px 0px;
-  gap: 20px;
 }
 
 .contact-info h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 64px;
   color: white;
+  font-weight: normal;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 88px;
 }
 
 .contact-icons .icon {
   background-color: #b53b1b;
-  border: 1px solid white;
-  padding: 8px;
+  border: 2px solid white;
+  padding: 16px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
 }
 
 .contact-icons img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .contact-form {
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 36px;
 }
 
 .form-inputs {
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 
 .contact-form input,
@@ -84,7 +84,7 @@
   width: 100%;
   padding: 10px;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: transparent;
   color: white;
 }
@@ -98,14 +98,20 @@
   background-color: #ff6c51;
   border: none;
   color: white;
-  padding: 10px;
+  padding: 19px;
   font-size: 16px;
-  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.contact-map {
+.contact-form button:hover {
+  background-color: #ff4f2e;
+}
+
+.contact-map iframe {
+  max-width: 494px;
+  height: 264px;
   border-radius: 8px;
   overflow: hidden;
 }
